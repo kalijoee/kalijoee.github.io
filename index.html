@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>❤️¿TE DIGNAS A CASARTE CONMIGO?</title>
+  <style>
+    .body {
+      background-color: rgb(255, 0, 106);
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">>❤️¿TE VAS A DIGNAR A CASARTE CONMIGO?❤️</h1>
+  <img src="https://pbs.twimg.com/media/DIQn8thXYAILaUt.jpg" alt="Foto de ya wey" class="body__img" />
+  <br>
+  <button id="yes">Si🫡</button>
+  <button id="no">ObligamePerro🙄</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('Sabia que dirias sí🫣');
+      alert('NuesTrA VoDa Is MañaNa, no existe una negativa para nuestro amor, como la vez 🤠 ');
+      location.href = 'https://youtu.be/9vjaM0UttFo?si=38ePeKuGVx9kMfNp';
+    };
+
+    const nopermitasqueserompamicocoro = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', nopermitasqueserompamicocoro);
+  </script>
+</body>
+
+</html>
